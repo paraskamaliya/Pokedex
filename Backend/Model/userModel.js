@@ -5,6 +5,8 @@ const userSchema = mongoose.Schema({
     password: String,
     favorites: Array,
     searchHistory: Array
+},{
+    versionKey: false
 })
 
 const UserModel = mongoose.model('user', userSchema);
